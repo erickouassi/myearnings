@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FEWS | Daily Income Goal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Meta Tags requred for Progressive Web App -->
+<meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+<meta name="theme-color" content="black">
+<!-- Manifest File link -->
+<link rel="manifest" href="manifest.json">
+<!-- End of Meta Tags requred for Progressive Web App -->
+<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+<meta name="description" content="Profit & Loss Calculator ...">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="/" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="view_top_gainers.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Hit Goal</a>
+    <a href="resources.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Resources</a>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content flex-wrapper" style="max-width:1500px">
+
+<!-- Header -->
+<div>
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>🤖 Hello, I'm Fews.</b></h1>
+  <p><b>... Here you go, the list of earnings that missed their goal (Bottom 50).</b></p>
+</header>
+
+<div class="w3-padding-16 w3-center">
+    <!-- -->
+    <div id="errors" style="display:none;"></div>
+    <table class="w3-table w3-bordered">
+        <thead>
+          <tr>
+          <th>Rank</th>
+          <th>State</th>
+          <th>Grade</th>
+          <th>Deficit (%)</th>
+          </tr>
+        </thead>
+        <tbody class="rank_list">
+    
+        </tbody>
+      </table>
+
+</div>
+<div class="w3-center">
+  <a href="/" style="text-decoration: none;">
+    <span>🔙</span>Return to Calculator</a>
+    </div>
+  <div class="w3-panel w3-leftbar w3-light-grey"><p><span class="w3-yellow">Disclaimer:</span> This web app should not be regarded as financial advice and is only meant to provide information.<br>
+    Before making significant financial decisions, you should seek advice from a financial expert.</p></div>
+<!-- End Page Content -->
+</div>
+
+<div>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-light-grey w3-center " style="margin-top:128px"> 
+    <div class="w3-medium"> © <span id="year">Loading...</span> <a  href="https://www.yorisi.com/" style="text-decoration: none;" target="_blank" >YORISI LLC</a>
+  <script type="text/javascript">document.getElementById("year").innerHTML = new Date().getFullYear();</script> 
+  </div>
+</footer>
+</div>
+
+</div>
+ 
+<script>
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+    <!-- ASP script -->
+    <script src="js_top_losers.js" defer></script> 
+    <!-- import the pwa-installer.js's javascript file -->
+    <script src="/pwaInstaller.js" defer></script>
+
+</body>
+</html>

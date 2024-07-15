@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FEWS | Daily Income Goal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Meta Tags requred for Progressive Web App -->
+<meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+<meta name="theme-color" content="black">
+<!-- Manifest File link -->
+<link rel="manifest" href="manifest.json">
+<!-- End of Meta Tags requred for Progressive Web App -->
+<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+<meta name="description" content="Net earnings Calculator ...">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+div.containerOL{
+  text-align: center;
+}
+ol.myOL{
+  display: inline-block;
+  text-align: left;
+}
+img {
+  border: 5px solid #555;
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="/" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="view_top_gainers.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Hit Goal</a>
+    <a href="view_top_losers.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Missed Goal</a>
+    <a href="resources.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Resources</a>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content flex-wrapper" style="max-width:1500px">
+
+<!-- Header -->
+<div>
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>🤖 Hello, I'm Fews.</b></h1>
+  <p><b>... I give your Earned Income a grade.</b> <br>
+  </p>
+  <img src="img/fews_grade_1.jpeg" alt="Letter Grade A " width="350" height="90">
+</header>
+
+<div class="w3-padding-16 w3-center">
+  <!--<p>Let's find out.</p>-->
+  <!-- -->
+  <form id="my-form" method="POST" action="https://script.google.com/macros/s/AKfycbxwhzuWt8PeX3xjzIG1KOLDN99SbbzdJHTZ8KHhj0qya96u-_8dQEu83uXDu3Tg7wdk/exec">
+    <!-- -->
+    <div class="containerOL"> 
+      <h3>👉🏿 Ready, Set, Go!</h3>
+      <p>It's simple: I believe in setting a D.I.G. — Daily Income Goal.<br></p>
+      <ol class="myOL" style="list-style: none;">
+        <li><label for="Access code">Access code:</label>
+          <input name="Access code" type="text" placeholder="A1234" required></li><br>
+        <li><label for="state">Choose your state:</label>
+          <select id="states" name="State">
+            <option value="none"></option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District Of Columbia</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+          </select></li><br>
+        <li><label for="Desire Hourly Rate">Desired hourly pay:</label>
+          <input name="Desire Hourly Rate" type="text" placeholder="25.00" inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*" required></li><br>
+        <li><label for="Your Earnings">Earned income:</label>
+          <input name="Your Earnings" type="text" placeholder="7.25" inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*" required></li><br>
+        <li><label for="Duration">Total minutes:</label>
+          <input name="Duration" type="text" placeholder="12.03" inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*" required></li>
+        <li><!--<label for="Distance">Distance:</label>-->
+          <input name="Distance" type="hidden" value="12.34"></li><br>
+        <li><label for="Others">Others:</label>
+          <input name="Others" type="text" placeholder="5.55" pattern="-?[0-9]*[.,]?[0-9]*" required></li>
+        <br>
+    <button type="submit">Calculate   </button>
+      </ol>
+  </form>
+  <!-- -->
+</div>
+<div class="w3-center">
+
+<div class="containerOL"> 
+  <h3>📊 Instruction</h3>
+  <ol class="myOL">
+    <li>Enter an access code of 5 characters to view your result later (ex: A1234).</li>
+    <li>Select your state (ex: New York).</li>
+    <li>Enter your desired hourly pay (ex: 33.33).</li>
+    <li>Enter how much you actually earned (ex: 9.15).</li>
+    <li>Total minutes is the time spent to earn in step 4 converted in minutes (ex:25.58 ).</li>
+    <li>This is optional: Enter cash tip (ex: 3.99) or ticket (ex: -64.99).</li>
+    <li>Click on the button "Calculate" and the current page will redirect to the result page.</li>
+    <li>On the next page, you will enter your access code from step 1 (ex: A1234) to view your result.</li>
+  </ol>
+</div>
+
+</div>
+<!-- End Page Content -->
+</div>
+
+<div>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-light-grey w3-center " style="margin-top:128px"> 
+    <div class="w3-medium"> © <span id="year">Loading...</span> <a  href="https://www.yorisi.com/" style="text-decoration: none;" target="_blank" >YORISI LLC</a>
+  <script type="text/javascript">document.getElementById("year").innerHTML = new Date().getFullYear();</script> 
+  </div>
+</footer>
+</div>
+
+</div>
+ 
+<script>
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script>
+    window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      //alert("Success!");
+      window.location.href = "/get_result.html";
+    })
+  });
+});
+  </script>
+    <!-- ASP script -->
+    <script src="js_asp_day_script.js" defer></script> 
+    <!-- import the pwa-installer.js's javascript file -->
+    <script src="/pwaInstaller.js" defer></script>
+
+</body>
+</html>
