@@ -1,0 +1,33 @@
+{
+  "title": "IRS Mileage Rates 2014-2026",
+  "source": "https://www.irs.gov",
+  "unit": "USD per mile",
+  "data": [
+    { "year": "2005 (Jan-Aug)", "rate": 0.405 },
+    { "year": "2005 (Sep-Dec)", "rate": 0.485 },
+    { "year": "2006", "rate": 0.445 },
+    { "year": "2007", "rate": 0.485 },
+    { "year": "2008 (Jan-Jun)", "rate": 0.505 },
+    { "year": "2008 (Jul-Dec)", "rate": 0.585 },
+    { "year": "2009", "rate": 0.550 },
+    { "year": "2010", "rate": 0.500 },
+    { "year": "2011 (Jan-Jun)", "rate": 0.510 },
+    { "year": "2011 (Jul-Dec)", "rate": 0.555 },
+    { "year": "2012", "rate": 0.555 },
+    { "year": "2013", "rate": 0.565 },
+    { "year": "2014", "rate": 0.560 },
+    { "year": "2015", "rate": 0.575 },
+    { "year": "2016", "rate": 0.540 },
+    { "year": "2017", "rate": 0.535 },
+    { "year": "2018", "rate": 0.545 },
+    { "year": "2019", "rate": 0.580 },
+    { "year": "2020", "rate": 0.575 },
+    { "year": "2021", "rate": 0.560 },
+    { "year": "2022 (Jan-Jun)", "rate": 0.585 },
+    { "year": "2022 (Jul-Dec)", "rate": 0.625 },
+    { "year": "2023", "rate": 0.655 },
+    { "year": "2024", "rate": 0.670 },
+    { "year": "2025", "rate": 0.700 },
+    { "year": "2026", "rate": 0.725 }
+  ]
+}
